@@ -6,15 +6,15 @@
 
 package snakeandladder;
 
+import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 /**
  *
  * @author VAIO
  */
 public class Snake {
-    private Map<Integer, Integer> snakes = new TreeMap<Integer, Integer>();
+    private Map<Integer, Integer> snakes = new HashMap<Integer, Integer>();
     
     public boolean addNewSnake(int head, int tail){
 	if(isSnakeExist(head)){
@@ -24,6 +24,7 @@ public class Snake {
 	    System.out.println("Not A valid head and tail position");
 	    return false;
 	}
+      
 	snakes.put(head, tail);		
 	return true;
     }

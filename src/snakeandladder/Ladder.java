@@ -7,14 +7,14 @@
 package snakeandladder;
 
 import java.util.Map;
-import java.util.TreeMap;
+import java.util.HashMap;
 
 /**
  *
  * @author VAIO
  */
 public class Ladder {
-    private Map<Integer, Integer> ladders = new TreeMap<Integer, Integer>();
+    private Map<Integer, Integer> ladders = new HashMap<Integer, Integer>();
 
     public boolean addNewLadder(int bottom, int top) {
 	if (isLadderExist(bottom)) {
